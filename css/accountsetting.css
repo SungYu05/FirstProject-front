@@ -72,7 +72,7 @@
 /*=====.header끝======*/
 
 #wrap {
-    height: 700px;
+    height: 1000px;
     background-color: #f2f2f2;
 }
 
@@ -216,7 +216,6 @@
 }
 
 /*.as_button*/
-/*.join_button*/
 .as_button button {
     margin: 20px 0 0 430px;
     width: 226px;

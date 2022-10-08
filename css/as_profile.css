@@ -71,111 +71,134 @@
 }
 /*=====.header끝======*/
 
-/*=====.login 시작=====*/
-.wrap {
+#wrap {
+    height: 1000px;
+    background-color: #f2f2f2;
+}
+/*======.as_wrap 시작======*/
+#as_wrap {
     width: 1000px;
-    height: 700px;
     margin: 0 auto;
-}
-/*.login_logo=====*/
-.login_logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
 }
-
-.login_logo .logo {
-    margin-top: 30px;
-    line-height: 100px;    
+/*.as_menu======*/
+.as_menu {
+    margin-right: 50px;
 }
-
-.login_logo .logo a {
-    font-family: 'RixInooAriDuriR';
-    color: #0d0d12;
-    font-weight:lighter;
-    font-size: 25px;
-    line-height: 25px;
-}
-
-.login_logo h3 {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-.login_logo h4 {
-    color: #bbb;
-    margin-bottom: 20px;
-}
-
-/*.login_detail=====*/
-.login_detail {
-
-}
-
-.login_form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /*text-align: center; 중앙정렬을 join_text만 줄지 전체에 줄지 고민*/
-}
-
-/*공통*/
-.login_id,
-.login_password {
-    margin-top: 20px;
-}
-
-.login_id .text p,
-.login_password .text p {
+.as_title {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5em;
     font-weight: bold;
+    padding: 60px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.as_position {
+    padding: 0px 50px 10px 30px;
+}
+
+.as_position a {
+    font-size: 16px;
+    font-weight: 900;
+    color: #333333;
+    box-shadow: inset 0 -10px 1px #33ffcc;
+}
+
+.as_proposal {
+    padding: 0px 50px 0px 30px;
+    margin-bottom: 10px;
+}
+
+.as_proposal a {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.as_proposal a:hover {
+    color: #33ffcc;
+    font-weight: bold;
+}
+/*.as_menu 끝=======*/
+
+/*.as_edit 시작======*/
+.as_edit {
+    width: 723px;
+	border: 1px solid #bbb;
+    padding: 20px 0 40px 20px; /*padding-bottom 수정하기*/
+    margin-top: 100px;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.as_edit strong {
+    font-size: 18px;   
+}
+
+.as_edit span {
+    line-height: 50px;
     color: #bbb;
 }
 
-.login_id input,
-.login_password input {
-    width: 300px;
+.as_edit select {
+    width: 504px;
     height: 40px;
     border-radius: 5px;
     padding: 6px 12px;
     border: 1px solid #bbb;
-    outline: none;
 }
+/*.as_edit 끝======*/
 
-.login_id .text,
-.login_password .text {
-    margin-bottom: 5px;
-}
-
-.login_id .text p,
-.login_password .text p {
-    padding-top: 5px;
-}
-
-.login_id_remember,
-.login_id input::placeholder,
-.login_password input::placeholder {
-    color: #bbb;
-}
-
-/*.login_id_remember=====*/
-.login_id_remember {
-    width: 300px;
-    margin-top: 30px;
+/*.as_detail 시작====*/
+/*공통*/
+.as_detail_position,
+.as_detail_skill,
+.as_detail_career,
+.as_detail_company,
+.as_detail_education {
+    margin:0 0 30px 25px;
     display: flex;
-    justify-content: flex-start;
 }
 
-.login_id_remember input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+.as_detail_position h6,
+.as_detail_skill h6,
+.as_detail_career h6,
+.as_detail_company h6,
+.as_detail_education h6,
+.as_detail_text h6 {
+    width: 107px;
+    color: #bbb;
+    padding-top: 10px;
 }
 
-/*.login_button=====*/
-.login_button button {
+/*.as_detail_position*/
+.as_detail_position {
     margin-top: 20px;
-    width: 300px;
+}
+/*.as_detail_text*/
+.as_detail_text {
+    margin-left: 25px;
+}
+
+.as_detail_text p {
+    margin-top: 10px;
+    color: #bbb;
+    font-size: 13px;
+}
+
+.as_detail_text textarea {
+    width: 612px;
+    height: 172px;
+    resize: none;
+    border: 1px solid #bbb;
+    outline-color: #bbb;
+}
+/*.as_detail 끝====*/
+
+/*.as_button 시작====*/
+.as_button button {
+    margin: 20px 0 0 430px;
+    width: 226px;
     height: 40px;
     font-size: 18px;
     border-radius: 40px;
@@ -183,18 +206,13 @@
     background-color: #f4f4f4;
 }
 
-.login_button button:hover {
+.as_button button:hover {
     cursor: pointer;
     color: #33ffcc;
     background-color: #0d0d26;
     border: 1px solid #0d0d26;
 }
-
-/*.login_text*/
-.login_text {
-    margin-top: 20px;
-    text-align: center;
-}
+/*.as_button 끝====*/
 
 /*=====.footer시작======*/
 .footer {
